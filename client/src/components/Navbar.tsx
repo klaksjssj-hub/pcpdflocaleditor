@@ -413,22 +413,6 @@ export const Navbar: React.FC<NavbarProps> = ({
               {theme === 'dark' ? <Sun className="h-4 w-4 text-amber-400" /> : <Moon className="h-4 w-4" />}
             </button>
 
-            {/* Primary Action CTA */}
-            <button
-              onClick={() => {
-                if (currentTab !== 'home') {
-                  handleSelectTool('home');
-                }
-                const el = document.getElementById('toolsGrid');
-                if (el) el.scrollIntoView({ behavior: 'smooth' });
-                else setActiveMenu(activeMenu === 'allTools' ? null : 'allTools');
-              }}
-              className="hidden lg:inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-[#E5322D] hover:bg-[#cb2622] text-white text-xs font-bold uppercase tracking-wider shadow-sm shadow-red-500/20 transition-all hover:shadow-md cursor-pointer active:scale-95"
-            >
-              <span>Explore All</span>
-              <LayoutGrid className="h-4 w-4" />
-            </button>
-
             {/* Mobile Hamburger Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
