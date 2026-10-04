@@ -1,0 +1,569 @@
+{
+  "files": {
+    "1fc2b1f0-614a-484e-8682-bbecbfa68a5e": {
+      "originalName": "sample1.pdf",
+      "storedName": "858796c8-3551-492c-8e7d-a3ee83934cd7.pdf",
+      "mimeType": "application/pdf",
+      "fileSizeBytes": 1109,
+      "storagePath": "C:\\Users\\Akshit Madhukar\\.gemini\\antigravity\\scratch\\localpdf\\server\\uploads\\858796c8-3551-492c-8e7d-a3ee83934cd7.pdf",
+      "isProcessed": false,
+      "expiresAt": "2026-10-05T15:54:37.124Z",
+      "id": "1fc2b1f0-614a-484e-8682-bbecbfa68a5e",
+      "isDeleted": false,
+      "createdAt": "2026-10-04T15:54:37.124Z",
+      "pageCount": 2
+    },
+    "95ee697e-e01b-44da-b363-a33bd2d42054": {
+      "originalName": "sample2.pdf",
+      "storedName": "6fee47b2-262e-465a-a1b2-4ea2fb247981.pdf",
+      "mimeType": "application/pdf",
+      "fileSizeBytes": 876,
+      "storagePath": "C:\\Users\\Akshit Madhukar\\.gemini\\antigravity\\scratch\\localpdf\\server\\uploads\\6fee47b2-262e-465a-a1b2-4ea2fb247981.pdf",
+      "isProcessed": false,
+      "expiresAt": "2026-10-05T15:54:37.133Z",
+      "id": "95ee697e-e01b-44da-b363-a33bd2d42054",
+      "isDeleted": false,
+      "createdAt": "2026-10-04T15:54:37.133Z",
+      "pageCount": 1
+    },
+    "a23a5937-1c2d-42ff-8778-eef5a455be83": {
+      "originalName": "merged_1791129277377.pdf",
+      "storedName": "processed_faa3f728-4f75-4bb9-a42f-8fa79a9636ec.pdf",
+      "mimeType": "application/pdf",
+      "fileSizeBytes": 1341,
+      "storagePath": "C:\\Users\\Akshit Madhukar\\.gemini\\antigravity\\scratch\\localpdf\\server\\processed\\processed_faa3f728-4f75-4bb9-a42f-8fa79a9636ec.pdf",
+      "isProcessed": true,
+      "expiresAt": "2026-10-05T15:54:37.378Z",
+      "id": "a23a5937-1c2d-42ff-8778-eef5a455be83",
+      "isDeleted": false,
+      "createdAt": "2026-10-04T15:54:37.378Z"
+    },
+    "c85f5b72-a4c1-4f1f-8f8f-04289053e10d": {
+      "originalName": "extracted.pdf",
+      "storedName": "processed_86bce706-54cf-4005-9642-c176a657e7cc.pdf",
+      "mimeType": "application/pdf",
+      "fileSizeBytes": 876,
+      "storagePath": "C:\\Users\\Akshit Madhukar\\.gemini\\antigravity\\scratch\\localpdf\\server\\processed\\processed_86bce706-54cf-4005-9642-c176a657e7cc.pdf",
+      "isProcessed": true,
+      "expiresAt": "2026-10-05T15:54:37.432Z",
+      "id": "c85f5b72-a4c1-4f1f-8f8f-04289053e10d",
+      "isDeleted": false,
+      "createdAt": "2026-10-04T15:54:37.432Z"
+    },
+    "38c04114-87a9-4516-a823-77e5d2d7cca1": {
+      "originalName": "compressed_sample1.pdf",
+      "storedName": "processed_c58c9893-240e-4b44-a679-9b2444e66bb3.pdf",
+      "mimeType": "application/pdf",
+      "fileSizeBytes": 1111,
+      "storagePath": "C:\\Users\\Akshit Madhukar\\.gemini\\antigravity\\scratch\\localpdf\\server\\processed\\processed_c58c9893-240e-4b44-a679-9b2444e66bb3.pdf",
+      "isProcessed": true,
+      "expiresAt": "2026-10-05T15:54:37.465Z",
+      "id": "38c04114-87a9-4516-a823-77e5d2d7cca1",
+      "isDeleted": false,
+      "createdAt": "2026-10-04T15:54:37.465Z"
+    },
+    "c0432980-b216-4e97-9e84-1e5639f4b453": {
+      "originalName": "edited_sample1.pdf",
+      "storedName": "processed_08439373-ddb7-41e6-8970-0f47bb1f74f8.pdf",
+      "mimeType": "application/pdf",
+      "fileSizeBytes": 1815,
+      "storagePath": "C:\\Users\\Akshit Madhukar\\.gemini\\antigravity\\scratch\\localpdf\\server\\processed\\processed_08439373-ddb7-41e6-8970-0f47bb1f74f8.pdf",
+      "isProcessed": true,
+      "expiresAt": "2026-10-05T15:54:37.522Z",
+      "id": "c0432980-b216-4e97-9e84-1e5639f4b453",
+      "isDeleted": false,
+      "createdAt": "2026-10-04T15:54:37.523Z"
+    },
+    "7701d636-22d1-43fa-acc7-a96ffa468f07": {
+      "originalName": "protected_sample1.pdf",
+      "storedName": "processed_b9a461d6-52d2-446b-8e5f-450518eee373.pdf",
+      "mimeType": "application/pdf",
+      "fileSizeBytes": 1195,
+      "storagePath": "C:\\Users\\Akshit Madhukar\\.gemini\\antigravity\\scratch\\localpdf\\server\\processed\\processed_b9a461d6-52d2-446b-8e5f-450518eee373.pdf",
+      "isProcessed": true,
+      "expiresAt": "2026-10-05T15:54:37.549Z",
+      "id": "7701d636-22d1-43fa-acc7-a96ffa468f07",
+      "isDeleted": false,
+      "createdAt": "2026-10-04T15:54:37.549Z"
+    },
+    "9a4cc25c-879e-4024-9702-17314776ecf0": {
+      "originalName": "signed_sample1.pdf",
+      "storedName": "processed_fca7a4e1-d219-44cf-8d9a-085adc1b6065.pdf",
+      "mimeType": "application/pdf",
+      "fileSizeBytes": 1837,
+      "storagePath": "C:\\Users\\Akshit Madhukar\\.gemini\\antigravity\\scratch\\localpdf\\server\\processed\\processed_fca7a4e1-d219-44cf-8d9a-085adc1b6065.pdf",
+      "isProcessed": true,
+      "expiresAt": "2026-10-05T15:54:37.579Z",
+      "id": "9a4cc25c-879e-4024-9702-17314776ecf0",
+      "isDeleted": false,
+      "createdAt": "2026-10-04T15:54:37.579Z"
+    },
+    "1ce326aa-9f23-45f6-be26-7d6c3c9fca03": {
+      "originalName": "sample1.pdf",
+      "storedName": "49b2da28-39df-432f-995e-809104f62b00.pdf",
+      "mimeType": "application/pdf",
+      "fileSizeBytes": 1108,
+      "storagePath": "uploads\\49b2da28-39df-432f-995e-809104f62b00.pdf",
+      "isProcessed": false,
+      "expiresAt": "2026-10-05T16:00:36.852Z",
+      "id": "1ce326aa-9f23-45f6-be26-7d6c3c9fca03",
+      "isDeleted": false,
+      "createdAt": "2026-10-04T16:00:36.852Z",
+      "pageCount": 2
+    },
+    "fd0be4ad-cf51-4656-923d-01a137cbeaf2": {
+      "originalName": "sample2.pdf",
+      "storedName": "9ec5653d-3d62-48c0-9143-d4034205490c.pdf",
+      "mimeType": "application/pdf",
+      "fileSizeBytes": 875,
+      "storagePath": "uploads\\9ec5653d-3d62-48c0-9143-d4034205490c.pdf",
+      "isProcessed": false,
+      "expiresAt": "2026-10-05T16:00:36.860Z",
+      "id": "fd0be4ad-cf51-4656-923d-01a137cbeaf2",
+      "isDeleted": false,
+      "createdAt": "2026-10-04T16:00:36.860Z",
+      "pageCount": 1
+    },
+    "3ea298af-e909-4265-890c-68eb7ceeb2c0": {
+      "originalName": "merged_1791129636916.pdf",
+      "storedName": "processed_f45776e7-2416-40db-967e-8c91c28b344c.pdf",
+      "mimeType": "application/pdf",
+      "fileSizeBytes": 1340,
+      "storagePath": "processed\\processed_f45776e7-2416-40db-967e-8c91c28b344c.pdf",
+      "isProcessed": true,
+      "expiresAt": "2026-10-05T16:00:36.917Z",
+      "id": "3ea298af-e909-4265-890c-68eb7ceeb2c0",
+      "isDeleted": false,
+      "createdAt": "2026-10-04T16:00:36.917Z"
+    },
+    "9c0fd0bc-1d65-42ff-832f-fb7551095123": {
+      "originalName": "extracted.pdf",
+      "storedName": "processed_8cace3d6-0baa-4981-befc-ff2fbe07bdd6.pdf",
+      "mimeType": "application/pdf",
+      "fileSizeBytes": 875,
+      "storagePath": "processed\\processed_8cace3d6-0baa-4981-befc-ff2fbe07bdd6.pdf",
+      "isProcessed": true,
+      "expiresAt": "2026-10-05T16:00:36.960Z",
+      "id": "9c0fd0bc-1d65-42ff-832f-fb7551095123",
+      "isDeleted": false,
+      "createdAt": "2026-10-04T16:00:36.960Z"
+    },
+    "4738799e-5d58-4915-aa86-64188dad9b42": {
+      "originalName": "compressed_sample1.pdf",
+      "storedName": "processed_e924dac5-5da7-4996-a4db-c0493e51edd6.pdf",
+      "mimeType": "application/pdf",
+      "fileSizeBytes": 1108,
+      "storagePath": "processed\\processed_e924dac5-5da7-4996-a4db-c0493e51edd6.pdf",
+      "isProcessed": true,
+      "expiresAt": "2026-10-05T16:00:36.985Z",
+      "id": "4738799e-5d58-4915-aa86-64188dad9b42",
+      "isDeleted": false,
+      "createdAt": "2026-10-04T16:00:36.985Z"
+    },
+    "81a19be1-061e-486f-9ec9-91af4cb35136": {
+      "originalName": "edited_sample1.pdf",
+      "storedName": "processed_6a03a38b-7248-4bf8-acc9-0f28a21b9c6c.pdf",
+      "mimeType": "application/pdf",
+      "fileSizeBytes": 1814,
+      "storagePath": "processed\\processed_6a03a38b-7248-4bf8-acc9-0f28a21b9c6c.pdf",
+      "isProcessed": true,
+      "expiresAt": "2026-10-05T16:00:37.034Z",
+      "id": "81a19be1-061e-486f-9ec9-91af4cb35136",
+      "isDeleted": false,
+      "createdAt": "2026-10-04T16:00:37.034Z"
+    },
+    "60f226eb-94a2-41c2-ba43-67358458bd5e": {
+      "originalName": "protected_sample1.pdf",
+      "storedName": "processed_95718fa9-5004-4e01-b85b-0b8c10c95475.pdf",
+      "mimeType": "application/pdf",
+      "fileSizeBytes": 1194,
+      "storagePath": "processed\\processed_95718fa9-5004-4e01-b85b-0b8c10c95475.pdf",
+      "isProcessed": true,
+      "expiresAt": "2026-10-05T16:00:37.060Z",
+      "id": "60f226eb-94a2-41c2-ba43-67358458bd5e",
+      "isDeleted": false,
+      "createdAt": "2026-10-04T16:00:37.060Z"
+    },
+    "fd1f8feb-7e0c-4c48-b261-e3f6e5fd5990": {
+      "originalName": "signed_sample1.pdf",
+      "storedName": "processed_fec0f632-5202-45cc-8c27-f613339e02cb.pdf",
+      "mimeType": "application/pdf",
+      "fileSizeBytes": 1836,
+      "storagePath": "processed\\processed_fec0f632-5202-45cc-8c27-f613339e02cb.pdf",
+      "isProcessed": true,
+      "expiresAt": "2026-10-05T16:00:37.089Z",
+      "id": "fd1f8feb-7e0c-4c48-b261-e3f6e5fd5990",
+      "isDeleted": false,
+      "createdAt": "2026-10-04T16:00:37.089Z"
+    },
+    "29873887-fe6b-4db7-832e-008b8a31702f": {
+      "originalName": "EnglishL-SQP.pdf",
+      "storedName": "3ca58467-493e-418d-b5fc-08765873b26f.pdf",
+      "mimeType": "application/pdf",
+      "fileSizeBytes": 422376,
+      "storagePath": "uploads\\3ca58467-493e-418d-b5fc-08765873b26f.pdf",
+      "isProcessed": false,
+      "expiresAt": "2026-10-05T16:35:15.335Z",
+      "id": "29873887-fe6b-4db7-832e-008b8a31702f",
+      "isDeleted": false,
+      "createdAt": "2026-10-04T16:35:15.338Z",
+      "pageCount": 11
+    },
+    "c37c34d1-5a71-4f0e-90bd-89f2795f7952": {
+      "originalName": "EnglishL-SQP.pdf",
+      "storedName": "04435ba8-aa36-4eaa-ab61-9fe7097b12fd.pdf",
+      "mimeType": "application/pdf",
+      "fileSizeBytes": 422376,
+      "storagePath": "uploads\\04435ba8-aa36-4eaa-ab61-9fe7097b12fd.pdf",
+      "isProcessed": false,
+      "expiresAt": "2026-10-05T16:35:21.870Z",
+      "id": "c37c34d1-5a71-4f0e-90bd-89f2795f7952",
+      "isDeleted": false,
+      "createdAt": "2026-10-04T16:35:21.870Z",
+      "pageCount": 11
+    },
+    "b5c712e0-5cdf-4665-9a88-b70d14e2512b": {
+      "originalName": "EnglishL-SQP.pdf",
+      "storedName": "f1ac62ca-52ee-42fd-a8de-dc471d339523.pdf",
+      "mimeType": "application/pdf",
+      "fileSizeBytes": 422376,
+      "storagePath": "uploads\\f1ac62ca-52ee-42fd-a8de-dc471d339523.pdf",
+      "isProcessed": false,
+      "expiresAt": "2026-10-05T16:35:23.629Z",
+      "id": "b5c712e0-5cdf-4665-9a88-b70d14e2512b",
+      "isDeleted": false,
+      "createdAt": "2026-10-04T16:35:23.629Z"
+    },
+    "79aa3c97-187d-4d36-9ccb-378ed3450cc8": {
+      "originalName": "EnglishL-SQP.pdf",
+      "storedName": "ab65c386-7166-42e2-b204-ed80f7faf66b.pdf",
+      "mimeType": "application/pdf",
+      "fileSizeBytes": 422376,
+      "storagePath": "uploads\\ab65c386-7166-42e2-b204-ed80f7faf66b.pdf",
+      "isProcessed": false,
+      "expiresAt": "2026-10-05T16:57:12.111Z",
+      "id": "79aa3c97-187d-4d36-9ccb-378ed3450cc8",
+      "isDeleted": false,
+      "createdAt": "2026-10-04T16:57:12.122Z",
+      "pageCount": 11
+    },
+    "6a9ada0c-5e1f-4ade-8468-94e8fe148da1": {
+      "originalName": "ocr_searchable_EnglishL-SQP.pdf.pdf",
+      "storedName": "processed_7c0610f5-0343-4950-9730-9fdd2a9ece39.pdf",
+      "mimeType": "application/pdf",
+      "fileSizeBytes": 29560,
+      "storagePath": "processed\\processed_7c0610f5-0343-4950-9730-9fdd2a9ece39.pdf",
+      "isProcessed": true,
+      "expiresAt": "2026-10-05T16:57:13.388Z",
+      "id": "6a9ada0c-5e1f-4ade-8468-94e8fe148da1",
+      "isDeleted": false,
+      "createdAt": "2026-10-04T16:57:13.389Z"
+    },
+    "c1f0ee84-6d42-4574-85c6-1b67005e043b": {
+      "originalName": "à¤- à¤®à¥à¤².pdf",
+      "storedName": "0fd1c7ab-3019-433f-87d3-b275957c869e.pdf",
+      "mimeType": "application/pdf",
+      "fileSizeBytes": 378421,
+      "storagePath": "uploads\\0fd1c7ab-3019-433f-87d3-b275957c869e.pdf",
+      "isProcessed": false,
+      "expiresAt": "2026-10-05T16:57:23.018Z",
+      "id": "c1f0ee84-6d42-4574-85c6-1b67005e043b",
+      "isDeleted": false,
+      "createdAt": "2026-10-04T16:57:23.018Z",
+      "pageCount": 1
+    },
+    "148bbc98-aadc-4dfb-8796-4ef42698065e": {
+      "originalName": "ocr_searchable_à¤- à¤®à¥à¤².pdf.pdf",
+      "storedName": "processed_7b985b7f-cabf-498d-87ba-1e8ff44224a1.pdf",
+      "mimeType": "application/pdf",
+      "fileSizeBytes": 2895,
+      "storagePath": "processed\\processed_7b985b7f-cabf-498d-87ba-1e8ff44224a1.pdf",
+      "isProcessed": true,
+      "expiresAt": "2026-10-05T16:57:23.267Z",
+      "id": "148bbc98-aadc-4dfb-8796-4ef42698065e",
+      "isDeleted": false,
+      "createdAt": "2026-10-04T16:57:23.267Z"
+    },
+    "9f62588d-adf8-42a9-ac59-81e458a4ec4c": {
+      "originalName": "à¤- à¤®à¥à¤².pdf",
+      "storedName": "aa016e30-6fa3-41fc-addb-9b76d1c95b2b.pdf",
+      "mimeType": "application/pdf",
+      "fileSizeBytes": 378421,
+      "storagePath": "uploads\\aa016e30-6fa3-41fc-addb-9b76d1c95b2b.pdf",
+      "isProcessed": false,
+      "expiresAt": "2026-10-05T17:04:03.989Z",
+      "id": "9f62588d-adf8-42a9-ac59-81e458a4ec4c",
+      "isDeleted": false,
+      "createdAt": "2026-10-04T17:04:04.023Z",
+      "pageCount": 1
+    },
+    "9a2d533f-0377-490c-939d-3fa9741221f6": {
+      "originalName": "ocr_searchable_à¤- à¤®à¥à¤².pdf.pdf",
+      "storedName": "processed_62304e4d-111b-4551-be2d-8a9b34a63c86.pdf",
+      "mimeType": "application/pdf",
+      "fileSizeBytes": 771421,
+      "storagePath": "processed\\processed_62304e4d-111b-4551-be2d-8a9b34a63c86.pdf",
+      "isProcessed": true,
+      "expiresAt": "2026-10-05T17:04:18.063Z",
+      "id": "9a2d533f-0377-490c-939d-3fa9741221f6",
+      "isDeleted": false,
+      "createdAt": "2026-10-04T17:04:18.064Z"
+    },
+    "9fef1d7f-b9ec-423d-a406-ca72615ced0e": {
+      "originalName": "à¤²à¤à¤¨à¤µà¥ à¤à¤à¤¦à¤¾à¤à¤¼ (1).pdf",
+      "storedName": "c5e53d03-46f5-4040-adf6-cf96d4ca71dc.pdf",
+      "mimeType": "application/pdf",
+      "fileSizeBytes": 463323,
+      "storagePath": "uploads\\c5e53d03-46f5-4040-adf6-cf96d4ca71dc.pdf",
+      "isProcessed": false,
+      "expiresAt": "2026-10-05T17:04:25.031Z",
+      "id": "9fef1d7f-b9ec-423d-a406-ca72615ced0e",
+      "isDeleted": false,
+      "createdAt": "2026-10-04T17:04:25.031Z",
+      "pageCount": 4
+    },
+    "01df2485-6a37-43c7-afd3-ea04f14b96bc": {
+      "originalName": "ocr_searchable_à¤²à¤à¤¨à¤µà¥ à¤à¤à¤¦à¤¾à¤à¤¼ (1).pdf.pdf",
+      "storedName": "processed_b58c2787-222d-466a-a025-ee289baca95d.pdf",
+      "mimeType": "application/pdf",
+      "fileSizeBytes": 773765,
+      "storagePath": "processed\\processed_b58c2787-222d-466a-a025-ee289baca95d.pdf",
+      "isProcessed": true,
+      "expiresAt": "2026-10-05T17:04:47.202Z",
+      "id": "01df2485-6a37-43c7-afd3-ea04f14b96bc",
+      "isDeleted": false,
+      "createdAt": "2026-10-04T17:04:47.202Z"
+    }
+  },
+  "operations": [
+    {
+      "toolType": "ocr",
+      "inputFiles": [
+        "9fef1d7f-b9ec-423d-a406-ca72615ced0e"
+      ],
+      "outputFileId": "01df2485-6a37-43c7-afd3-ea04f14b96bc",
+      "outputFileName": "ocr_searchable_à¤²à¤à¤¨à¤µà¥ à¤à¤à¤¦à¤¾à¤à¤¼ (1).pdf.pdf",
+      "status": "completed",
+      "originalSizeBytes": 463323,
+      "processedSizeBytes": 773765,
+      "processingTimeMs": 21961,
+      "id": "f920c06c-6177-4f9f-8687-123c131e6f3d",
+      "createdAt": "2026-10-04T17:04:47.203Z"
+    },
+    {
+      "toolType": "ocr",
+      "inputFiles": [
+        "9f62588d-adf8-42a9-ac59-81e458a4ec4c"
+      ],
+      "outputFileId": "9a2d533f-0377-490c-939d-3fa9741221f6",
+      "outputFileName": "ocr_searchable_à¤- à¤®à¥à¤².pdf.pdf",
+      "status": "completed",
+      "originalSizeBytes": 378421,
+      "processedSizeBytes": 771421,
+      "processingTimeMs": 13807,
+      "id": "ced36f13-67d7-42b6-bd81-fe92fd6a6097",
+      "createdAt": "2026-10-04T17:04:18.064Z"
+    },
+    {
+      "toolType": "ocr",
+      "inputFiles": [
+        "c1f0ee84-6d42-4574-85c6-1b67005e043b"
+      ],
+      "outputFileId": "148bbc98-aadc-4dfb-8796-4ef42698065e",
+      "outputFileName": "ocr_searchable_à¤- à¤®à¥à¤².pdf.pdf",
+      "status": "completed",
+      "originalSizeBytes": 378421,
+      "processedSizeBytes": 2895,
+      "processingTimeMs": 92,
+      "id": "e985b8c9-142a-453c-9a5e-5b6c19e8d88f",
+      "createdAt": "2026-10-04T16:57:23.267Z"
+    },
+    {
+      "toolType": "ocr",
+      "inputFiles": [
+        "79aa3c97-187d-4d36-9ccb-378ed3450cc8"
+      ],
+      "outputFileId": "6a9ada0c-5e1f-4ade-8468-94e8fe148da1",
+      "outputFileName": "ocr_searchable_EnglishL-SQP.pdf.pdf",
+      "status": "completed",
+      "originalSizeBytes": 422376,
+      "processedSizeBytes": 29560,
+      "processingTimeMs": 671,
+      "id": "394153b0-b0df-4c95-a0f6-aa4371ff8f5d",
+      "createdAt": "2026-10-04T16:57:13.390Z"
+    },
+    {
+      "toolType": "sign",
+      "inputFiles": [
+        "1ce326aa-9f23-45f6-be26-7d6c3c9fca03"
+      ],
+      "outputFileId": "fd1f8feb-7e0c-4c48-b261-e3f6e5fd5990",
+      "outputFileName": "signed_sample1.pdf",
+      "status": "completed",
+      "originalSizeBytes": 1108,
+      "processedSizeBytes": 1836,
+      "processingTimeMs": 10,
+      "id": "3e0b8ac1-064a-4751-abae-10f12d9673c1",
+      "createdAt": "2026-10-04T16:00:37.090Z"
+    },
+    {
+      "toolType": "protect",
+      "inputFiles": [
+        "1ce326aa-9f23-45f6-be26-7d6c3c9fca03"
+      ],
+      "outputFileId": "60f226eb-94a2-41c2-ba43-67358458bd5e",
+      "outputFileName": "protected_sample1.pdf",
+      "status": "completed",
+      "originalSizeBytes": 1108,
+      "processedSizeBytes": 1194,
+      "processingTimeMs": 6,
+      "id": "f1a65db4-4469-49bd-89af-63ba01cb730c",
+      "createdAt": "2026-10-04T16:00:37.061Z"
+    },
+    {
+      "toolType": "edit",
+      "inputFiles": [
+        "1ce326aa-9f23-45f6-be26-7d6c3c9fca03"
+      ],
+      "outputFileId": "81a19be1-061e-486f-9ec9-91af4cb35136",
+      "outputFileName": "edited_sample1.pdf",
+      "status": "completed",
+      "originalSizeBytes": 1108,
+      "processedSizeBytes": 1814,
+      "processingTimeMs": 32,
+      "id": "d1dfb396-a46c-474c-885a-a6eb1cf9ea1d",
+      "createdAt": "2026-10-04T16:00:37.035Z"
+    },
+    {
+      "toolType": "compress",
+      "inputFiles": [
+        "1ce326aa-9f23-45f6-be26-7d6c3c9fca03"
+      ],
+      "outputFileId": "4738799e-5d58-4915-aa86-64188dad9b42",
+      "outputFileName": "compressed_sample1.pdf",
+      "status": "completed",
+      "originalSizeBytes": 1108,
+      "processedSizeBytes": 1108,
+      "savingsPercentage": 0,
+      "processingTimeMs": 8,
+      "id": "ba14b9c5-09e0-4b6d-8cf6-f16592e98bd9",
+      "createdAt": "2026-10-04T16:00:36.986Z"
+    },
+    {
+      "toolType": "split",
+      "inputFiles": [
+        "1ce326aa-9f23-45f6-be26-7d6c3c9fca03"
+      ],
+      "outputFileId": "9c0fd0bc-1d65-42ff-832f-fb7551095123",
+      "outputFileName": "extracted.pdf",
+      "status": "completed",
+      "originalSizeBytes": 1108,
+      "processedSizeBytes": 875,
+      "processingTimeMs": 6,
+      "id": "4f611f8d-32bb-4622-9982-f1c2f08a4c9d",
+      "createdAt": "2026-10-04T16:00:36.961Z"
+    },
+    {
+      "toolType": "merge",
+      "inputFiles": [
+        "1ce326aa-9f23-45f6-be26-7d6c3c9fca03",
+        "fd0be4ad-cf51-4656-923d-01a137cbeaf2"
+      ],
+      "outputFileId": "3ea298af-e909-4265-890c-68eb7ceeb2c0",
+      "outputFileName": "merged_1791129636916.pdf",
+      "status": "completed",
+      "originalSizeBytes": 1983,
+      "processedSizeBytes": 1340,
+      "processingTimeMs": 11,
+      "id": "d4fc07f4-c1e8-46b7-b560-34c7d1aa1b44",
+      "createdAt": "2026-10-04T16:00:36.917Z"
+    },
+    {
+      "toolType": "sign",
+      "inputFiles": [
+        "1fc2b1f0-614a-484e-8682-bbecbfa68a5e"
+      ],
+      "outputFileId": "9a4cc25c-879e-4024-9702-17314776ecf0",
+      "outputFileName": "signed_sample1.pdf",
+      "status": "completed",
+      "originalSizeBytes": 1109,
+      "processedSizeBytes": 1837,
+      "processingTimeMs": 11,
+      "id": "d59843fe-6825-4357-88a4-7defda39d4ec",
+      "createdAt": "2026-10-04T15:54:37.579Z"
+    },
+    {
+      "toolType": "protect",
+      "inputFiles": [
+        "1fc2b1f0-614a-484e-8682-bbecbfa68a5e"
+      ],
+      "outputFileId": "7701d636-22d1-43fa-acc7-a96ffa468f07",
+      "outputFileName": "protected_sample1.pdf",
+      "status": "completed",
+      "originalSizeBytes": 1109,
+      "processedSizeBytes": 1195,
+      "processingTimeMs": 5,
+      "id": "953b090a-24b7-4854-9f8e-b410a007f8f7",
+      "createdAt": "2026-10-04T15:54:37.549Z"
+    },
+    {
+      "toolType": "edit",
+      "inputFiles": [
+        "1fc2b1f0-614a-484e-8682-bbecbfa68a5e"
+      ],
+      "outputFileId": "c0432980-b216-4e97-9e84-1e5639f4b453",
+      "outputFileName": "edited_sample1.pdf",
+      "status": "completed",
+      "originalSizeBytes": 1109,
+      "processedSizeBytes": 1815,
+      "processingTimeMs": 34,
+      "id": "064d27f5-4300-4f00-b9ff-3b85c615259d",
+      "createdAt": "2026-10-04T15:54:37.523Z"
+    },
+    {
+      "toolType": "compress",
+      "inputFiles": [
+        "1fc2b1f0-614a-484e-8682-bbecbfa68a5e"
+      ],
+      "outputFileId": "38c04114-87a9-4516-a823-77e5d2d7cca1",
+      "outputFileName": "compressed_sample1.pdf",
+      "status": "completed",
+      "originalSizeBytes": 1109,
+      "processedSizeBytes": 1111,
+      "savingsPercentage": 0,
+      "processingTimeMs": 11,
+      "id": "0ff09386-5f31-41aa-807a-92bc61db0343",
+      "createdAt": "2026-10-04T15:54:37.466Z"
+    },
+    {
+      "toolType": "split",
+      "inputFiles": [
+        "1fc2b1f0-614a-484e-8682-bbecbfa68a5e"
+      ],
+      "outputFileId": "c85f5b72-a4c1-4f1f-8f8f-04289053e10d",
+      "outputFileName": "extracted.pdf",
+      "status": "completed",
+      "originalSizeBytes": 1109,
+      "processedSizeBytes": 876,
+      "processingTimeMs": 7,
+      "id": "6ff262dc-b2ac-485d-8b16-9b4ae67c42c5",
+      "createdAt": "2026-10-04T15:54:37.433Z"
+    },
+    {
+      "toolType": "merge",
+      "inputFiles": [
+        "1fc2b1f0-614a-484e-8682-bbecbfa68a5e",
+        "95ee697e-e01b-44da-b363-a33bd2d42054"
+      ],
+      "outputFileId": "a23a5937-1c2d-42ff-8778-eef5a455be83",
+      "outputFileName": "merged_1791129277377.pdf",
+      "status": "completed",
+      "originalSizeBytes": 1985,
+      "processedSizeBytes": 1341,
+      "processingTimeMs": 13,
+      "id": "846fd895-149b-4edf-8ff0-c71b50bd66ca",
+      "createdAt": "2026-10-04T15:54:37.378Z"
+    }
+  ],
+  "templates": []
+}

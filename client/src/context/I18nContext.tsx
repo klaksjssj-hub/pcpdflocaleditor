@@ -1,0 +1,252 @@
+import React, { createContext, useContext, useState, useEffect } from 'react';
+
+export type Language = 'en' | 'es' | 'fr' | 'de' | 'hi';
+
+interface Translations {
+  [key: string]: {
+    [key: string]: string;
+  };
+}
+
+const translations: Translations = {
+  en: {
+    heroTitle: 'Every tool you need to work with PDFs in one place',
+    heroSubtitle: '100% Free, Secure and Easy to Use! Merge, split, compress, convert, edit, sign, and secure PDF files in just a few clicks.',
+    exploreTools: 'Explore All PDF Tools',
+    searchPlaceholder: 'Search tools (e.g. merge, compress, protect, sign)...',
+    dropFiles: 'Drop PDF files here, or click to browse',
+    dropFilesSubtitle: '100% In-browser processing. Files never leave your computer.',
+    mergeTitle: 'Merge PDF',
+    mergeDesc: 'Combine PDFs in the order you want with the easiest PDF merger available.',
+    splitTitle: 'Split PDF',
+    splitDesc: 'Separate one page or a whole set for easy conversion into independent PDF files.',
+    compressTitle: 'Compress PDF',
+    compressDesc: 'Reduce file size while optimizing for maximal PDF quality.',
+    pdfToWordTitle: 'PDF to Word',
+    pdfToWordDesc: 'Easily convert your PDF files into easy to edit DOC and DOCX documents.',
+    pdfToExcelTitle: 'PDF to Excel',
+    pdfToExcelDesc: 'Pull data straight from PDFs into Excel spreadsheets in a few short seconds.',
+    pdfToHtmlTitle: 'PDF to HTML',
+    pdfToHtmlDesc: 'Convert your PDF documents to clean, semantic HTML webpages.',
+    imagesToPdfTitle: 'JPG to PDF',
+    imagesToPdfDesc: 'Transform JPG, PNG and webp images to PDF in seconds. Adjust orientation and margins.',
+    editTitle: 'Edit PDF',
+    editDesc: 'Add text, shapes, watermarks, rotate, reorder and delete pages.',
+    protectTitle: 'Protect PDF',
+    protectDesc: 'Encrypt your PDF with a password to prevent unauthorized access.',
+    unlockTitle: 'Unlock PDF',
+    unlockDesc: 'Remove PDF password security, giving you the freedom to use your PDFs.',
+    signTitle: 'Sign PDF',
+    signDesc: 'Sign yourself or request electronic signatures and place them anywhere on your documents.',
+    ocrTitle: 'OCR PDF',
+    ocrDesc: 'Convert scanned PDF and images to editable, searchable text instantly.',
+    downloadResult: 'Download Processed File',
+    processAnother: 'Process Another File',
+    history: 'History',
+    dashboard: 'Dashboard',
+    apiDocs: 'API Docs',
+    privacyNote: 'Complete Privacy. Your files are processed entirely in your browser and never leave your device.',
+    processingMode: 'Processing Engine',
+    modeClient: 'In-Browser (100% Private)',
+    modeServer: 'In-Browser (100% Private)',
+  },
+  es: {
+    heroTitle: 'Todas las herramientas que necesitas para tus PDF en un solo lugar',
+    heroSubtitle: '100% Gratis, Seguro y Fácil de usar. Une, divide, comprime, convierte, edita y firma archivos PDF.',
+    exploreTools: 'Explorar herramientas',
+    searchPlaceholder: 'Buscar herramientas...',
+    dropFiles: 'Arrastra tus archivos PDF aquí o haz clic para seleccionar',
+    dropFilesSubtitle: 'Procesamiento seguro y privado',
+    mergeTitle: 'Unir PDF',
+    mergeDesc: 'Une PDFs en el orden que prefieras de forma rápida y sencilla.',
+    splitTitle: 'Dividir PDF',
+    splitDesc: 'Extrae una o varias páginas de tu PDF con total precisión.',
+    compressTitle: 'Comprimir PDF',
+    compressDesc: 'Reduce el tamaño de tu archivo manteniendo la máxima calidad.',
+    pdfToWordTitle: 'PDF a Word',
+    pdfToWordDesc: 'Convierte tus PDF a documentos DOCX editables con precisión.',
+    pdfToExcelTitle: 'PDF a Excel',
+    pdfToExcelDesc: 'Extrae tablas de tus PDFs a hojas de cálculo de Excel.',
+    pdfToHtmlTitle: 'PDF a HTML',
+    pdfToHtmlDesc: 'Convierte tus documentos PDF a páginas web HTML limpias.',
+    imagesToPdfTitle: 'JPG a PDF',
+    imagesToPdfDesc: 'Convierte imágenes JPG y PNG en documentos PDF.',
+    editTitle: 'Editar PDF',
+    editDesc: 'Añade texto, marcas de agua, rota y reordena páginas.',
+    protectTitle: 'Proteger PDF',
+    protectDesc: 'Protege tus archivos PDF con contraseña segura.',
+    unlockTitle: 'Desbloquear PDF',
+    unlockDesc: 'Elimina la contraseña de tus archivos PDF protegidos.',
+    signTitle: 'Firmar PDF',
+    signDesc: 'Firma tus documentos digitalmente o añade firmas manuscritas.',
+    ocrTitle: 'OCR PDF',
+    ocrDesc: 'Convierte PDFs escaneados e imágenes a texto editable.',
+    downloadResult: 'Descargar archivo procesado',
+    processAnother: 'Procesar otro archivo',
+    history: 'Historial',
+    dashboard: 'Panel de control',
+    apiDocs: 'Documentación API',
+    privacyNote: 'Tus archivos se eliminan automáticamente tras 24 horas.',
+    processingMode: 'Modo de procesamiento',
+    modeClient: 'En el navegador (Ultrarrápido y privado)',
+    modeServer: 'Servidor en la nube',
+  },
+  fr: {
+    heroTitle: 'Tous les outils dont vous avez besoin pour vos PDF',
+    heroSubtitle: '100% Gratuit, Sécurisé et Facile à utiliser ! Fusionnez, divisez, compressez, convertissez et signez vos PDF.',
+    exploreTools: 'Explorer les outils',
+    searchPlaceholder: 'Rechercher un outil...',
+    dropFiles: 'Déposez vos fichiers PDF ici ou cliquez pour parcourir',
+    dropFilesSubtitle: 'Traitement sécurisé et privé',
+    mergeTitle: 'Fusionner PDF',
+    mergeDesc: 'Combinez plusieurs fichiers PDF dans l\'ordre souhaité.',
+    splitTitle: 'Diviser PDF',
+    splitDesc: 'Extrayez des pages spécifiques ou découpez votre PDF.',
+    compressTitle: 'Compresser PDF',
+    compressDesc: 'Diminuez la taille de votre PDF tout en préservant la qualité.',
+    pdfToWordTitle: 'PDF en Word',
+    pdfToWordDesc: 'Convertissez vos fichiers PDF en documents Word modifiables.',
+    pdfToExcelTitle: 'PDF en Excel',
+    pdfToExcelDesc: 'Extrayez des données de vos PDF dans des feuilles Excel.',
+    pdfToHtmlTitle: 'PDF en HTML',
+    pdfToHtmlDesc: 'Convertissez vos documents PDF en pages HTML.',
+    imagesToPdfTitle: 'Images en PDF',
+    imagesToPdfDesc: 'Convertissez JPG et PNG en PDF en quelques secondes.',
+    editTitle: 'Modifier PDF',
+    editDesc: 'Ajoutez du texte, filigranes, faites pivoter et réorganisez les pages.',
+    protectTitle: 'Protéger PDF',
+    protectDesc: 'Protégez vos PDF avec un mot de passe fort.',
+    unlockTitle: 'Déverrouiller PDF',
+    unlockDesc: 'Supprimez la protection par mot de passe de vos PDF.',
+    signTitle: 'Signer PDF',
+    signDesc: 'Apposez votre signature électronique sur vos documents.',
+    ocrTitle: 'OCR PDF',
+    ocrDesc: 'Convertissez les documents numérisés en texte indexable.',
+    downloadResult: 'Télécharger le fichier',
+    processAnother: 'Traiter un autre document',
+    history: 'Historique',
+    dashboard: 'Tableau de bord',
+    apiDocs: 'API Docs',
+    privacyNote: 'Fichiers automatiquement supprimés après 24 heures.',
+    processingMode: 'Mode de traitement',
+    modeClient: 'Dans le navigateur (Rapide & Privé)',
+    modeServer: 'Moteur Serveur',
+  },
+  de: {
+    heroTitle: 'Jedes Werkzeug, das Sie für PDFs benötigen, an einem Ort',
+    heroSubtitle: '100% Kostenlos, Sicher und Einfach zu bedienen! PDF zusammenfügen, teilen, komprimieren, konvertieren und signieren.',
+    exploreTools: 'Alle Werkzeuge anzeigen',
+    searchPlaceholder: 'Werkzeuge durchsuchen...',
+    dropFiles: 'PDF-Dateien hier ablegen oder durchsuchen',
+    dropFilesSubtitle: 'Sichere lokale oder verschlüsselte Verarbeitung',
+    mergeTitle: 'PDF zusammenfügen',
+    mergeDesc: 'PDF-Dateien in der gewünschten Reihenfolge verbinden.',
+    splitTitle: 'PDF teilen',
+    splitDesc: 'Seitenbereiche oder einzelne Seiten aus PDFs extrahieren.',
+    compressTitle: 'PDF komprimieren',
+    compressDesc: 'Dateigröße bei bester Qualität verringern.',
+    pdfToWordTitle: 'PDF in Word',
+    pdfToWordDesc: 'PDF in bearbeitbare Word-Dokumente umwandeln.',
+    pdfToExcelTitle: 'PDF in Excel',
+    pdfToExcelDesc: 'Tabellen aus PDFs in Excel-Dateien übertragen.',
+    pdfToHtmlTitle: 'PDF in HTML',
+    pdfToHtmlDesc: 'PDF-Dateien in semantische Webseiten umwandeln.',
+    imagesToPdfTitle: 'Bilder in PDF',
+    imagesToPdfDesc: 'JPG- und PNG-Bilder blitzschnell in PDFs umwandeln.',
+    editTitle: 'PDF bearbeiten',
+    editDesc: 'Text, Wasserzeichen hinzufügen, Seiten drehen und sortieren.',
+    protectTitle: 'PDF schützen',
+    protectDesc: 'PDF-Dateien mit einem Kennwort verschlüsseln.',
+    unlockTitle: 'PDF entsperren',
+    unlockDesc: 'Passwortschutz von PDFs entfernen.',
+    signTitle: 'PDF unterschreiben',
+    signDesc: 'Dokumente digital unterschreiben und platzieren.',
+    ocrTitle: 'PDF OCR',
+    ocrDesc: 'Gescannte Dokumente in durchsuchbaren Text umwandeln.',
+    downloadResult: 'Verarbeitete Datei herunterladen',
+    processAnother: 'Weiteres Dokument bearbeiten',
+    history: 'Verlauf',
+    dashboard: 'Dashboard',
+    apiDocs: 'API Dokumentation',
+    privacyNote: 'Ihre Dateien werden nach 24 Stunden automatisch gelöscht.',
+    processingMode: 'Verarbeitungsmodus',
+    modeClient: 'Im Browser (Schnell & Sicher)',
+    modeServer: 'Server Engine',
+  },
+  hi: {
+    heroTitle: 'PDF फाइलों के लिए आवश्यक सभी टूल्स एक ही स्थान पर',
+    heroSubtitle: '100% मुफ्त, सुरक्षित और उपयोग में बेहद आसान! मर्ज करें, स्प्लिट करें, कंप्रेस करें, कन्वर्ट करें, एडिट करें और साइन करें।',
+    exploreTools: 'सभी टूल्स देखें',
+    searchPlaceholder: 'टूल्स खोजें (जैसे: मर्ज, कंप्रेस, प्रोटेक्ट)...',
+    dropFiles: 'PDF फ़ाइलें यहाँ छोड़ें, या चुनने के लिए क्लिक करें',
+    dropFilesSubtitle: 'पूर्णतः सुरक्षित एवं निजी प्रसंस्करण',
+    mergeTitle: 'PDF मर्ज करें',
+    mergeDesc: 'अपनी पसंद के क्रम में आसानी से कई PDF फ़ाइलों को जोड़ें।',
+    splitTitle: 'PDF स्प्लिट करें',
+    splitDesc: 'पेज अलग करें या चुनिंदा पेजों को नई PDF में निकालें।',
+    compressTitle: 'PDF कंप्रेस करें',
+    compressDesc: 'बेहतरीन गुणवत्ता बनाए रखते हुए फ़ाइल का साइज़ कम करें।',
+    pdfToWordTitle: 'PDF से Word',
+    pdfToWordDesc: 'अपनी PDF फ़ाइलों को संपादन योग्य DOCX दस्तावेज़ में बदलें।',
+    pdfToExcelTitle: 'PDF से Excel',
+    pdfToExcelDesc: 'PDF डेटा को कुछ ही पलों में Excel स्प्रेडशीट में बदलें।',
+    pdfToHtmlTitle: 'PDF से HTML',
+    pdfToHtmlDesc: 'PDF दस्तावेज़ों को साफ़ HTML वेब पेजों में बदलें।',
+    imagesToPdfTitle: 'JPG से PDF',
+    imagesToPdfDesc: 'तस्वीरों को तुरंत PDF दस्तावेज़ में बदलें।',
+    editTitle: 'PDF एडिट करें',
+    editDesc: 'टेक्स्ट, वॉटरमार्क जोड़ें, पेज घुमाएँ और पुनः व्यवस्थित करें।',
+    protectTitle: 'PDF सुरक्षित करें',
+    protectDesc: 'अवांछित पहुंच से बचाने के लिए पासवर्ड से सुरक्षित करें।',
+    unlockTitle: 'PDF अनलॉक करें',
+    unlockDesc: 'सुरक्षित PDF से पासवर्ड हटाएं।',
+    signTitle: 'PDF साइन करें',
+    signDesc: 'दस्तावेज़ों पर डिजिटल हस्ताक्षर बनाएं और लगाएं।',
+    ocrTitle: 'OCR PDF',
+    ocrDesc: 'स्कैन किए गए PDF व छवियों से टेक्स्ट पहचानें व खोज योग्य बनाएं।',
+    downloadResult: 'फ़ाइल डाउनलोड करें',
+    processAnother: 'अन्य फ़ाइल प्रोसेस करें',
+    history: 'इतिहास',
+    dashboard: 'डैशबोर्ड',
+    apiDocs: 'API डॉक्स',
+    privacyNote: 'आपकी गोपनीयता सुरक्षित है। फ़ाइलें 24 घंटे बाद स्वतः नष्ट हो जाती हैं।',
+    processingMode: 'प्रोसेसिंग मोड',
+    modeClient: 'ब्राउज़र में (तेज़ और निजी)',
+    modeServer: 'क्लाउड सर्वर इंजन',
+  },
+};
+
+interface I18nContextType {
+  language: Language;
+  setLanguage: (lang: Language) => void;
+  t: (key: string) => string;
+}
+
+const I18nContext = createContext<I18nContextType>({
+  language: 'en',
+  setLanguage: () => {},
+  t: (key) => key,
+});
+
+export const I18nProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const [language, setLanguage] = useState<Language>(() => {
+    return (localStorage.getItem('localpdf_lang') as Language) || 'en';
+  });
+
+  useEffect(() => {
+    localStorage.setItem('localpdf_lang', language);
+  }, [language]);
+
+  const t = (key: string): string => {
+    const langDict = translations[language] || translations.en;
+    return langDict[key] || translations.en[key] || key;
+  };
+
+  return (
+    <I18nContext.Provider value={{ language, setLanguage, t }}>
+      {children}
+    </I18nContext.Provider>
+  );
+};
+
+export const useI18n = () => useContext(I18nContext);

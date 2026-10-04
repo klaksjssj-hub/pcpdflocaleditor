@@ -1,0 +1,46 @@
+{
+  "name": "localpdf-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "High performance PDF processing REST API for localpdf (iLovePDF alternative)",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "test": "jest --detectOpenHandles"
+  },
+  "dependencies": {
+    "@pdf-lib/fontkit": "^1.1.1",
+    "archiver": "^7.0.1",
+    "cors": "^2.8.5",
+    "docx": "^8.5.0",
+    "dotenv": "^16.4.5",
+    "exceljs": "^4.4.0",
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1",
+    "pdf-lib": "^1.17.1",
+    "pdf-parse": "^1.1.1",
+    "swagger-ui-express": "^5.0.1",
+    "tesseract.js": "^5.1.0",
+    "uuid": "^10.0.0",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "@types/archiver": "^6.0.2",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
+    "@types/multer": "^1.4.11",
+    "@types/node": "^20.14.0",
+    "@types/supertest": "^6.0.2",
+    "@types/swagger-ui-express": "^4.1.6",
+    "@types/uuid": "^10.0.0",
+    "@types/yamljs": "^0.2.34",
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.1.5",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.5.3"
+  }
+}

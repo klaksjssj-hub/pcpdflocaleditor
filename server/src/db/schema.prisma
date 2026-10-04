@@ -1,0 +1,79 @@
+// Prisma Schema for iLovePDF Clone
+datasource db {
+  provider = "postgresql" // can be changed to "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum UserTier {
+  FREE
+  PREMIUM
+  ENTERPRISE
+}
+
+enum OperationStatus {
+  QUEUED
+  PROCESSING
+  COMPLETED
+  FAILED
+}
+
+model User {
+  id               String              @id @default(uuid())
+  email            String              @unique
+  passwordHash     String
+  fullName         String?
+  tier             UserTier            @default(FREE)
+  storageUsedBytes BigInt              @default(0)
+  createdAt        DateTime            @default(now())
+  updatedAt        DateTime            @updatedAt
+  files            FileMetadata[]
+  operations       OperationHistory[]
+  templates        SavedTemplate[]
+}
+
+model FileMetadata {
+  id           String              @id @default(uuid())
+  userId       String?
+  user         User?               @relation(fields: [userId], references: [id], onDelete: SetNull)
+  originalName String
+  storedName   String
+  mimeType     String
+  fileSizeBytes BigInt
+  pageCount    Int                 @default(0)
+  storagePath  String
+  isProcessed  Boolean             @default(false)
+  isDeleted    Boolean             @default(false)
+  expiresAt    DateTime
+  createdAt    DateTime            @default(now())
+  outputFor    OperationHistory[]  @relation("OutputFile")
+}
+
+model OperationHistory {
+  id                 String          @id @default(uuid())
+  userId             String?
+  user               User?           @relation(fields: [userId], references: [id], onDelete: SetNull)
+  toolType           String
+  inputFileIds       String?         // JSON string
+  outputFileId       String?
+  outputFile         FileMetadata?   @relation("OutputFile", fields: [outputFileId], references: [id], onDelete: SetNull)
+  status             OperationStatus @default(COMPLETED)
+  parameters         String?         // JSON string
+  originalSizeBytes  BigInt?
+  processedSizeBytes BigInt?
+  processingTimeMs   Int?
+  createdAt          DateTime        @default(now())
+}
+
+model SavedTemplate {
+  id                String   @id @default(uuid())
+  userId            String
+  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  name              String
+  toolType          String
+  configurationJson String
+  createdAt         DateTime @default(now())
+}
